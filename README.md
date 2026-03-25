@@ -27,9 +27,31 @@ The pipeline leverages the following AWS services:
 7. Athena queries the data using SQL  
 8. QuickSight visualizes the data in a SIEM-style dashboard
 
+## Table of Contents
 
+1. [Prerequisites](#prerequisites)
+2. [Step-by-Step Implementation](#step-by-step-implementation)
 
-## Prerequisites
+   - [1. Create S3 Bucket](#1-create-s3-bucket)
+   - [2. Create Kinesis Stream](#2-create-kinesis-stream)
+   - [3. Create IAM Role (Ingestion)](#3-create-iam-role-ingestion-lambda)
+   - [4. Create Ingestion Lambda](#4-create-ingestion-lambda)
+   - [5. Create API Gateway](#5-create-api-gateway)
+   - [6. Test API](#6-test-api)
+   - [7. Create IAM Role (Processor)](#7-create-iam-role-processor-lambda)
+   - [8. Create Processor Lambda](#8-create-processor-lambda)
+   - [9. Connect Kinesis Trigger](#9-connect-kinesis-trigger)
+   - [10. Verify Data in S3](#10-verify-data-in-s3)
+   - [11. Create Glue Crawler](#11-create-glue-crawler)
+   - [12. Query with Athena](#12-query-with-athena)
+   - [13. Generate Test Data](#13-generate-test-data)
+   - [14. Setup QuickSight](#14-setup-quicksight)
+   - [15. Build Dashboard](#15-build-dashboard)
+
+3. [Troubleshooting](#troubleshooting)
+4. [Final Results](#final-results)
+
+## Prerequisites 
 
 Before starting, ensure you have:
 
