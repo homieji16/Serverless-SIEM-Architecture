@@ -433,7 +433,31 @@ Create these visuals in QuickSight:
 - Login Failure Trend line chart
 - Application Activity pie chart
 - Event Type Breakdown donut chart
+---
 
+### Dashboard Preview
+
+Below is the final SIEM-style dashboard built using Amazon QuickSight:
+
+![Security Analytics Dashboard](./dashboard.png.pdf)
+---
+
+### Dashboard Insights
+
+The dashboard provides real-time visibility into security events, including:
+
+- **Total Events:** 725+ events ingested and processed  
+- **Login Failures:** 50 failed login attempts detected  
+- **Unique Users:** 23 distinct users  
+- **Unique Source IPs:** 25 unique IP addresses  
+
+Additional visualizations include:
+
+- **Login Failure Trend** to identify spikes and anomalies  
+- **Application Activity Breakdown** to monitor usage patterns  
+- **Event Type Distribution** to detect abnormal behavior  
+
+This allows for quick identification of suspicious activity such as brute-force login attempts and unusual access patterns.
 
 
 ### Troubleshooting
